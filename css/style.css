@@ -1,0 +1,243 @@
+html,body{
+	height:100%;
+}
+/*----------PAGE 1-------------*/
+#page1{
+	position:relative;
+	height:100%;
+	overflow:hidden;
+}
+#page1 .logo{
+	left: 50%;
+    margin-left: -172.5px;
+    margin-top: -80.5px;
+    position: absolute;
+    top: 50%;
+}
+/*----------PAGE 2-------------*/
+#page2{
+	background-image:url(../img/pattern.jpg);
+	height:100%;
+}
+#page2 .txt-center{
+	color: #7394B7;
+    font-family: 'Lato';
+	text-align:center;
+	padding-bottom: 10.9%;
+    padding-top: 10.9%;
+}
+#page2 .txt1{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    font-size: 58px;
+    font-weight: lighter;	
+}
+#page2 .txt2{
+	border-bottom: 1px solid;
+    font-size: 109px;
+    font-weight: bold;
+}
+#page2 .txt3{
+	border-top: 1px solid;
+    font-size: 39px;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+#page2 .txt4{
+	font-size: 22px;
+    font-weight: lighter;
+}
+#page2 .txt5{
+	font-size: 42px;
+    font-weight: lighter;
+}
+#page2 .liner{
+	position: relative;
+    top: -20px;
+	font-size: 35px;
+}
+#page2 .txt6{
+    font-family: 'Abril Fatface';
+    font-size: 55px;
+	position: relative;
+    top: -15px;
+}
+/*----------PAGE 3-------------*/
+#page3{
+	position:relative;
+	height:100%;
+	overflow:hidden;
+}
+#page3 .transparent-white{
+	background-color: #FFFFFF;
+    height: 277px;
+    margin-top: -138.5px;
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+	filter:alpha(opacity=40); /* For IE8 */
+}
+#page3 .txt-center{
+    color: #000000;
+    font-family: 'Lato';
+    left: 50%;
+    margin-left: -382px;
+    margin-top: -89.5px;
+    max-width: 800px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+#page3 .txt1{
+    font-size: 20px;
+	display: block;
+	margin-bottom: -10px;	
+}
+#page3 .txt2{
+	border-bottom: 1px solid;
+    border-top: 1px solid;
+	font-family: 'Abril Fatface';
+	font-size: 44px;
+	padding-bottom: 8px;
+	display: block;
+}
+#page3 .txt3{
+	font-size: 20px;
+	margin-bottom: -20px;
+    margin-top: -10px;
+	display:block;
+}
+#page3 .txt4{
+	font-family: 'Abril Fatface';
+	font-size: 28px;
+}
+/*----------PAGE 4-------------*/
+#page4{
+	background-image:url(../img/trama.jpg);
+	position:relative;
+	height:100%;
+}
+#page4 .txt-center{
+	color: #7394B7;
+    font-family: 'Lato';
+    left: 50%;
+    margin-left: -205px;
+    margin-top: -152.5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+#page4 .txt1{
+    font-size: 36px;
+    font-weight: lighter;	
+}
+#page4 .txt2{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+	margin-bottom: -20px;
+	margin-top: 5px;
+}
+#page4 .txt3{
+    display: block;
+    font-size: 39px;
+    font-weight: lighter;
+	margin-bottom: -20px;
+    margin-top: -30px;
+    padding-bottom: 0;
+}
+#page4 .txt4{
+	font-size: 56px;
+    font-weight: lighter;
+	margin-bottom: -20px;
+    margin-top: 5px;
+	display: block;
+}
+#page4 .txt5{
+	font-size: 42px;
+    font-weight: lighter;
+	display: block;
+	margin-bottom: -15px;
+    margin-top: 5px;
+}
+#page4 .liner{
+	position: relative;
+    top: -20px;
+	font-size: 35px;
+}
+#page4 .txt6{
+    font-family: 'Abril Fatface';
+    font-size: 54px;
+	position: relative;
+    top: -15px;
+}
+/*-----------PROYECTS---------------*/
+#proyects{
+	background-image:url(../img/pattern.jpg);	
+}
+#proyects .logo2{
+	position:relative;
+	left:50%;
+	margin-left:-93px;
+	margin-bottom: 15px;
+    margin-top: 40px;
+}
+#proyects .liner{
+	color: #7394B7;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: -20px;
+}
+#proyects .proyectos{
+	text-align:center;
+	font-family:'Lato';
+	color:#7394B7;
+	display:block;
+	padding-bottom: 40px;
+}
+.clear{clear:both;}
+/*-----------FOOTER---------------*/
+#footer{
+	background-color:#7394B7;
+}
+#footer .txt-center{
+    color: #FFFFFF;
+    font-family: 'Lato';
+    padding-bottom: 3%;
+    padding-top: 3%;
+	text-align: center;
+}
+#footer .txt1{
+	font-size: 42px;
+    font-weight: lighter;
+	display: block;
+	margin-bottom: 10px;
+    margin-top: 5px;
+}
+#footer .liner{
+	position: relative;
+    top: -20px;
+	font-size: 35px;
+}
+#footer .mail{
+	color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;
+}
+#footer .txt2{
+	display: block;
+	margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/*---------------DISPLAYS NONES------------------*/
+/*#page1{display:none;}*/
+/*#page2{display:none;}
+/*page3{display:none;}*/
+/*#page4{display:none;}*/
+#proyects{display:none;}
+/*#footer{display:none;}*/
