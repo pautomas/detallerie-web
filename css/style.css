@@ -1,6 +1,55 @@
 html,body{
 	height:100%;
 }
+/*------------MENU-------------*/
+.menu{
+    background: url(../img/contentBg.png);
+    border-bottom: 3px solid #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+	padding-bottom: 10px;
+    padding-top: 10px;
+	display:none;	
+}
+.menu ul{
+    left: 50%;
+    margin-left: -330px;
+    position: relative;
+    width: 100%;
+}
+.menu ul li{
+	display:inline;
+	padding-right: 120px;
+}
+.menu ul li a{
+	text-decoration:none;
+	font-family:'Lato';
+	font-size: 14px;
+	color:#FFFFFF;
+}
+.pane_show{
+    background: url("../img/arrow-open.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    left: 50%;
+    margin-left: 350px;
+    padding-right: 40px;
+    padding-top: 19px;
+    position: fixed;
+    top: 24px;
+    z-index: 999;
+}
+.pane_hide{
+    background: url("../img/arrow-close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    left: 50%;
+    margin-left: 350px;
+    padding-right: 40px;
+    padding-top: 19px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
 /*----------PAGE 1-------------*/
 #page1{
 	position:relative;
@@ -18,30 +67,37 @@ html,body{
 #page2{
 	background-image:url(../img/pattern.jpg);
 	height:100%;
+	position:relative;
 }
 #page2 .txt-center{
 	color: #7394B7;
     font-family: 'Lato';
-	text-align:center;
-	padding-bottom: 10.9%;
-    padding-top: 10.9%;
+    left: 50%;
+    margin-left: -205px;
+    margin-top: -202.5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
 }
 #page2 .txt1{
     border-bottom: 1px solid;
     border-top: 1px solid;
     font-size: 58px;
-    font-weight: lighter;	
+    font-weight: lighter;
+	display:inline;	
 }
 #page2 .txt2{
 	border-bottom: 1px solid;
     font-size: 109px;
     font-weight: bold;
+	display:inline;
 }
 #page2 .txt3{
 	border-top: 1px solid;
     font-size: 39px;
     font-weight: lighter;
     padding-top: 5px;
+	display:inline;
 }
 #page2 .txt4{
 	font-size: 22px;
@@ -91,8 +147,7 @@ html,body{
 }
 #page3 .txt1{
     font-size: 20px;
-	display: block;
-	margin-bottom: -10px;	
+	margin-bottom: 8px;	
 }
 #page3 .txt2{
 	border-bottom: 1px solid;
@@ -100,13 +155,11 @@ html,body{
 	font-family: 'Abril Fatface';
 	font-size: 44px;
 	padding-bottom: 8px;
-	display: block;
 }
 #page3 .txt3{
 	font-size: 20px;
-	margin-bottom: -20px;
-    margin-top: -10px;
-	display:block;
+	margin-bottom: 2px;
+    margin-top: 8px;
 }
 #page3 .txt4{
 	font-family: 'Abril Fatface';
@@ -130,36 +183,27 @@ html,body{
 }
 #page4 .txt1{
     font-size: 36px;
-    font-weight: lighter;	
+    font-weight: lighter;
+	margin-bottom: 3px;	
 }
 #page4 .txt2{
-    display: block;
     font-size: 24px;
     font-weight: bold;
-	margin-bottom: -20px;
-	margin-top: 5px;
 }
 #page4 .txt3{
-    display: block;
     font-size: 39px;
     font-weight: lighter;
-	margin-bottom: -20px;
+    margin-bottom: -4px;
     margin-top: -30px;
-    padding-bottom: 0;
 }
 #page4 .txt4{
-	font-size: 56px;
+    font-size: 56px;
     font-weight: lighter;
-	margin-bottom: -20px;
-    margin-top: 5px;
-	display: block;
 }
 #page4 .txt5{
-	font-size: 42px;
+    font-size: 42px;
     font-weight: lighter;
-	display: block;
-	margin-bottom: -15px;
-    margin-top: 5px;
+    margin-bottom: -15px;
 }
 #page4 .liner{
 	position: relative;
@@ -169,12 +213,11 @@ html,body{
 #page4 .txt6{
     font-family: 'Abril Fatface';
     font-size: 54px;
-	position: relative;
-    top: -15px;
 }
 /*-----------PROYECTS---------------*/
 #proyects{
-	background-image:url(../img/pattern.jpg);	
+	background-image:url(../img/pattern.jpg);
+	overflow:hidden;	
 }
 #proyects .logo2{
 	position:relative;
@@ -185,7 +228,6 @@ html,body{
 }
 #proyects .liner{
 	color: #7394B7;
-    display: block;
     font-size: 30px;
     font-weight: bold;
     position: relative;
@@ -196,10 +238,145 @@ html,body{
 	text-align:center;
 	font-family:'Lato';
 	color:#7394B7;
-	display:block;
 	padding-bottom: 40px;
 }
-.clear{clear:both;}
+#proyects .images1{
+    left: 50%;
+    margin-left: -400px;
+    position: relative;
+    width: 800px;
+}
+
+#proyects .images1 .img1{float: left;  width: 255px; margin-right: 15px;}
+#proyects .images1 .img2{float: right; width: 530px; margin-bottom: 14px;}
+#proyects .images1 .img3{float: left;  width: 255px; margin-right: 15px; margin-bottom: 14px;}
+#proyects .images1 .img4{float: right; width: 260px; margin-bottom: 15px;}
+#proyects .images1 .img5{float: right; width: 260px; margin-bottom: 14px;}
+#proyects .images1 .img6{float: left;  width: 525px; margin-right: 15px;}
+
+#proyects .images1 .img-text-left{
+    border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    height: 214px;
+    position: absolute;
+    text-align: left;
+    top: 454px;
+    width: 254px;
+}
+#proyects .images1 .img-text-left .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -70px;
+	margin-top: -6px;
+}
+#proyects .images1 .img-text-left .txt1{
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+	margin-top: -10px;
+}
+#proyects .images1 .img-text-left .txt2{
+    font-family: 'Droid Serif';
+    font-size: 13px;
+    font-style: italic;
+	margin-bottom: 10px;
+}
+#proyects .images1 .img-text-left .txt3{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+#proyects .images1 .img-text-right{
+	border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    float: right;
+    height: 172px;
+    text-align: right;
+    width: 257px;
+}
+#proyects .images1 .img-text-right .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -62px;
+}
+#proyects .images1 .img-text-right .txt1{
+    font-family: 'Droid Serif';
+    font-style: italic;
+    font-weight: bold;
+	margin-bottom: 12px;
+}
+#proyects .images1 .img-text-right .txt2{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+
+.clear{clear:both; padding-bottom: 7px; padding-top: 7px;}
+
+#proyects .images2{
+    left: 50%;
+    margin-left: -400px;
+    position: relative;
+    width: 800px;
+}
+#proyects .images2 .img-text-left{
+    border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    float: left;
+    height: 172px;
+    text-align: right;
+    width: 240px;
+}
+#proyects .images2 .img-text-left .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -62px;
+}
+#proyects .images2 .img-text-left .txt1{
+    font-family: 'Droid Serif';
+    font-style: italic;
+    font-weight: bold;
+	margin-bottom: 12px;
+}
+#proyects .images2 .img-text-left .txt2{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+#proyects .images2 .img-text-right{
+    border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    float: left;
+    height: 216px;
+    text-align: left;
+    width: 256px;
+}
+#proyects .images2 .img-text-right .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -70px;
+	margin-top: -6px;
+}
+#proyects .images2 .img-text-right .txt1{
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+	margin-top: -10px;
+}
+#proyects .images2 .img-text-right .txt2{
+    font-family: 'Droid Serif';
+    font-size: 12px;
+    font-style: italic;
+	margin-bottom: 10px;
+}
+#proyects .images2 .img-text-right .txt3{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+#proyects .images2 .img7{float: right; width: 540px; margin-bottom: 15px;}
+#proyects .images2 .img8{float: left; margin-bottom: 14px; width: 245px; margin-top: 15px; margin-right: 15px;}
+#proyects .images2 .img9{float: right; width: 264px; margin-bottom: 14px;}
+#proyects .images2 .img10{float: left; margin-bottom: 90px; width: 800px;}
+
 /*-----------FOOTER---------------*/
 #footer{
 	background-color:#7394B7;
@@ -212,11 +389,9 @@ html,body{
 	text-align: center;
 }
 #footer .txt1{
-	font-size: 42px;
+    font-size: 42px;
     font-weight: lighter;
-	display: block;
-	margin-bottom: 10px;
-    margin-top: 5px;
+    margin-bottom: 20px;
 }
 #footer .liner{
 	position: relative;
@@ -235,9 +410,9 @@ html,body{
 }
 
 /*---------------DISPLAYS NONES------------------*/
-/*#page1{display:none;}*/
-/*#page2{display:none;}
-/*page3{display:none;}*/
-/*#page4{display:none;}*/
+/*#page1{display:none;}
+#page2{display:none;}
+#page3{display:none;}
+#page4{display:none;}
 #proyects{display:none;}
-/*#footer{display:none;}*/
+#footer{display:none;}*/
