@@ -240,6 +240,8 @@ html,body{
 	color:#7394B7;
 	padding-bottom: 40px;
 }
+
+/*------------------------PROYECTOS DIV 1-------------------------*/
 #proyects .images1{
     left: 50%;
     margin-left: -400px;
@@ -247,13 +249,40 @@ html,body{
     width: 800px;
 }
 
-#proyects .images1 .img1{float: left;  width: 255px; margin-right: 15px;}
-#proyects .images1 .img2{float: right; width: 530px; margin-bottom: 14px;}
+#proyects .images1 .img1{float: right; width: 530px; margin-bottom: 14px;}
 #proyects .images1 .img3{float: left;  width: 255px; margin-right: 15px; margin-bottom: 14px;}
 #proyects .images1 .img4{float: right; width: 260px; margin-bottom: 15px;}
-#proyects .images1 .img5{float: right; width: 260px; margin-bottom: 14px;}
-#proyects .images1 .img6{float: left;  width: 525px; margin-right: 15px;}
+#proyects .images1 .img5{float: right; width: 260px;}
+#proyects .images1 .img6{left: 0; position: absolute; top: 407px; width: 255px;}
 
+#proyects .images1 .img-text-left-2{
+    border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    height: 390px;
+    float:left;
+    text-align: left;
+    top: 454px;
+    width: 254px;
+	margin-right: 15px;
+}
+#proyects .images1 .img-text-left-2 .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -70px;
+	margin-top: -6px;
+}
+#proyects .images1 .img-text-left-2 .txt1{
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+	margin-top: -10px;
+}
+#proyects .images1 .img-text-left-2 .txt2{
+    font-family: 'Droid Serif';
+    font-size: 13px;
+    font-style: italic;
+	margin-bottom: 15px;
+}
 #proyects .images1 .img-text-left{
     border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
@@ -290,93 +319,142 @@ html,body{
     border-top: 1px solid #7394B7;
     color: #7394B7;
     float: right;
-    height: 172px;
+    height: 158px;
+    margin-right: 15px;
     text-align: right;
-    width: 257px;
+    width: 256px;
 }
 #proyects .images1 .img-text-right .comillas{
 	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -62px;
+    font-size: 100px;
+    margin-bottom: -60px;
+    margin-top: -15px;
 }
 #proyects .images1 .img-text-right .txt1{
     font-family: 'Droid Serif';
     font-style: italic;
     font-weight: bold;
 	margin-bottom: 12px;
+	font-size: 14px;
 }
 #proyects .images1 .img-text-right .txt2{
     font-family: 'Droid Serif';
     font-size: 11px;
 }
 
-.clear{clear:both; padding-bottom: 7px; padding-top: 7px;}
-
+/*------------------------PROYECTOS DIV 2-------------------------*/
 #proyects .images2{
     left: 50%;
     margin-left: -400px;
     position: relative;
     width: 800px;
 }
-#proyects .images2 .img-text-left{
+#proyects .images2 .img1{float: left; width: 525px;}
+#proyects .images2 .img2{float: right; width: 256px;}
+
+#proyects .images2 .img-text-right{
+	border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    float: right;
+    height: 121px;
+    text-align: right;
+    width: 256px;
+	margin-bottom: 14px;
+}
+#proyects .images2 .img-text-right .comillas{
+	font-family: 'Abril Fatface';
+    font-size: 100px;
+    margin-bottom: -60px;
+    margin-top: -24px;
+}
+#proyects .images2 .img-text-right .txt1{
+    font-family: 'Droid Serif';
+    font-style: italic;
+    font-weight: bold;
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+#proyects .images2 .img-text-right .txt2{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+
+/*------------------------PROYECTOS DIV 3-------------------------*/
+#proyects .images3{
+    left: 50%;
+    margin-left: -400px;
+    position: relative;
+    width: 800px;
+}
+#proyects .images3 .img-text-left{
     border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
     float: left;
     height: 172px;
-    text-align: right;
+    text-align: left;
     width: 240px;
 }
-#proyects .images2 .img-text-left .comillas{
-	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -62px;
+#proyects .images3 .img-text-left .comillas{
+    font-family: 'Abril Fatface';
+    font-size: 100px;
+    margin-bottom: -75px;
+    margin-top: -20px;
 }
-#proyects .images2 .img-text-left .txt1{
-    font-family: 'Droid Serif';
-    font-style: italic;
-    font-weight: bold;
-	margin-bottom: 12px;
-}
-#proyects .images2 .img-text-left .txt2{
-    font-family: 'Droid Serif';
-    font-size: 11px;
-}
-#proyects .images2 .img-text-right{
-    border-bottom: 1px solid #7394B7;
-    border-top: 1px solid #7394B7;
-    color: #7394B7;
-    float: left;
-    height: 216px;
-    text-align: left;
-    width: 256px;
-}
-#proyects .images2 .img-text-right .comillas{
-	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -70px;
-	margin-top: -6px;
-}
-#proyects .images2 .img-text-right .txt1{
+#proyects .images3 .img-text-left .txt1{
     font-family: 'Abril Fatface';
     font-size: 30px;
 	margin-top: -10px;
 }
-#proyects .images2 .img-text-right .txt2{
+#proyects .images3 .img-text-left .txt2{
     font-family: 'Droid Serif';
     font-size: 12px;
     font-style: italic;
 	margin-bottom: 10px;
 }
-#proyects .images2 .img-text-right .txt3{
+#proyects .images3 .img-text-left .txt3{
     font-family: 'Droid Serif';
     font-size: 11px;
 }
-#proyects .images2 .img7{float: right; width: 540px; margin-bottom: 15px;}
-#proyects .images2 .img8{float: left; margin-bottom: 14px; width: 245px; margin-top: 15px; margin-right: 15px;}
-#proyects .images2 .img9{float: right; width: 264px; margin-bottom: 14px;}
-#proyects .images2 .img10{float: left; margin-bottom: 90px; width: 800px;}
+#proyects .images3 .img-text-right{
+    border-bottom: 1px solid #7394B7;
+    border-top: 1px solid #7394B7;
+    color: #7394B7;
+    float: right;
+    height: 216px;
+    text-align: left;
+    width: 259px;
+}
+#proyects .images3 .img-text-right .comillas{
+	font-family: 'Abril Fatface';
+	font-size: 100px;
+	margin-bottom: -70px;
+	margin-top: -6px;
+}
+#proyects .images3 .img-text-right .txt1{
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+	margin-top: -10px;
+}
+#proyects .images3 .img-text-right .txt2{
+    font-family: 'Droid Serif';
+    font-size: 12px;
+    font-style: italic;
+	margin-bottom: 10px;
+}
+#proyects .images3 .img-text-right .txt3{
+    font-family: 'Droid Serif';
+    font-size: 11px;
+}
+#proyects .images3 .img1{float: right; width: 540px; margin-bottom: 15px;}
+#proyects .images3 .img2{float: left; margin-bottom: 14px; width: 245px; margin-top: 15px; margin-right: 15px;}
+#proyects .images3 .img3{float: left; width: 264px; margin-bottom: 14px;}
+#proyects .images3 .img4{float: right; width: 260px; margin-bottom: 15px;}
+#proyects .images3 .img5{float: left; width: 522px;margin-bottom: 15px;}
+#proyects .images3 .img6{float: left; margin-bottom: 90px; width: 800px;}
 
+.clear{clear:both; padding-bottom: 7px; padding-top: 7px;}
 /*-----------FOOTER---------------*/
 #footer{
 	background-color:#7394B7;
