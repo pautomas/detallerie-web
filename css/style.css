@@ -1,3 +1,71 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../font/Lato-Reg-webfont.eot');
+    src: url('../font/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Lato-Reg-webfont.woff') format('woff'),
+         url('../font/Lato-Reg-webfont.ttf') format('truetype'),
+         url('../font/Lato-Reg-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../font/Lato-Lig-webfont.eot');
+    src: url('../font/Lato-Lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Lato-Lig-webfont.woff') format('woff'),
+         url('../font/Lato-Lig-webfont.ttf') format('truetype'),
+         url('../font/Lato-Lig-webfont.svg#LatoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OtamaepRegular';
+    src: url('../font/Otama-ep-webfont.eot');
+    src: url('../font/Otama-ep-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Otama-ep-webfont.woff') format('woff'),
+         url('../font/Otama-ep-webfont.ttf') format('truetype'),
+         url('../font/Otama-ep-webfont.svg#OtamaepRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'DroidSerifRegular';
+    src: url('../font/DroidSerif-Regular-webfont.eot');
+    src: url('../font/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/DroidSerif-Regular-webfont.woff') format('woff'),
+         url('../font/DroidSerif-Regular-webfont.ttf') format('truetype'),
+         url('../font/DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSerifItalic';
+    src: url('../font/DroidSerif-Italic-webfont.eot');
+    src: url('../font/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/DroidSerif-Italic-webfont.woff') format('woff'),
+         url('../font/DroidSerif-Italic-webfont.ttf') format('truetype'),
+         url('../font/DroidSerif-Italic-webfont.svg#DroidSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'DroidSerifBoldItalic';
+    src: url('../font/DroidSerif-BoldItalic-webfont.eot');
+    src: url('../font/DroidSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/DroidSerif-BoldItalic-webfont.woff') format('woff'),
+         url('../font/DroidSerif-BoldItalic-webfont.ttf') format('truetype'),
+         url('../font/DroidSerif-BoldItalic-webfont.svg#DroidSerifBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html,body{
 	height:100%;
 }
@@ -24,7 +92,7 @@ html,body{
 }
 .menu ul li a{
 	text-decoration:none;
-	font-family:'Lato';
+	font-family:'LatoRegular';
 	font-size: 14px;
 	color:#FFFFFF;
 }
@@ -70,51 +138,52 @@ html,body{
 	position:relative;
 }
 #page2 .txt-center{
-	color: #7394B7;
-    font-family: 'Lato';
+    color: #7394B7;
     left: 50%;
-    margin-left: -205px;
-    margin-top: -202.5px;
+    margin-left: -213.5px;
+    margin-top: -207.5px;
     position: absolute;
     text-align: center;
     top: 50%;
+    width: 427px;
 }
 #page2 .txt1{
     border-bottom: 1px solid;
     border-top: 1px solid;
-    font-size: 58px;
-    font-weight: lighter;
+    font-size: 3.8em;
+    font-family: 'LatoLight';
 	display:inline;	
 }
 #page2 .txt2{
 	border-bottom: 1px solid;
-    font-size: 109px;
+	font-family: 'LatoRegular';
+    font-size: 7.2em;
     font-weight: bold;
-	display:inline;
+	margin-top: 10px;
 }
 #page2 .txt3{
 	border-top: 1px solid;
-    font-size: 39px;
-    font-weight: lighter;
-    padding-top: 5px;
-	display:inline;
+    font-size: 2.5em;
+    font-family: 'LatoLight';
+    margin-top: 5px;
 }
 #page2 .txt4{
-	font-size: 22px;
-    font-weight: lighter;
+	font-size: 1.4em;
+    font-family: 'LatoLight';
 }
 #page2 .txt5{
-	font-size: 42px;
-    font-weight: lighter;
+	font-size: 3em;
+    font-family: 'LatoLight';
 }
 #page2 .liner{
 	position: relative;
     top: -20px;
-	font-size: 35px;
+	font-size: 31px;
+	font-family: 'LatoLight';
 }
 #page2 .txt6{
-    font-family: 'Abril Fatface';
-    font-size: 55px;
+    font-family: 'Abril Fatface','OtamaepRegular';
+    font-size: 3.6em;
 	position: relative;
     top: -15px;
 }
@@ -136,34 +205,35 @@ html,body{
 }
 #page3 .txt-center{
     color: #000000;
-    font-family: 'Lato';
     left: 50%;
-    margin-left: -382px;
-    margin-top: -89.5px;
+    margin-left: -347.5px;
+    margin-top: -85px;
     max-width: 800px;
     position: absolute;
     text-align: center;
     top: 50%;
 }
 #page3 .txt1{
-    font-size: 20px;
-	margin-bottom: 8px;	
+    font-size: 1.4em;
+	margin-bottom: 8px;
+	font-family: 'LatoRegular';	
 }
 #page3 .txt2{
 	border-bottom: 1px solid;
     border-top: 1px solid;
-	font-family: 'Abril Fatface';
-	font-size: 44px;
+	font-family: 'Abril Fatface','OtamaepRegular';
+	font-size: 2.5em;
 	padding-bottom: 8px;
 }
 #page3 .txt3{
-	font-size: 20px;
+	font-family: 'LatoRegular';
+	font-size: 1.1em;
 	margin-bottom: 2px;
     margin-top: 8px;
 }
 #page3 .txt4{
-	font-family: 'Abril Fatface';
-	font-size: 28px;
+	font-family: 'Abril Fatface','OtamaepRegular';
+	font-size: 1.8em;
 }
 /*----------PAGE 4-------------*/
 #page4{
@@ -173,46 +243,48 @@ html,body{
 }
 #page4 .txt-center{
 	color: #7394B7;
-    font-family: 'Lato';
     left: 50%;
-    margin-left: -205px;
-    margin-top: -152.5px;
+    margin-left: -211.5px;
+    margin-top: -135.5px;
     position: absolute;
     text-align: center;
     top: 50%;
 }
 #page4 .txt1{
-    font-size: 36px;
-    font-weight: lighter;
-	margin-bottom: 3px;	
+    font-size: 2.3em;
+    font-family: 'LatoLight';
+	margin-bottom: 8px;	
 }
 #page4 .txt2{
-    font-size: 24px;
+	font-family: 'LatoRegular';
+    font-size: 1.4em;
     font-weight: bold;
+	margin-bottom: 8px;
 }
 #page4 .txt3{
-    font-size: 39px;
-    font-weight: lighter;
-    margin-bottom: -4px;
+    font-family: 'LatoLight';
+    font-size: 2.2em;
+    margin-bottom: 4px;
     margin-top: -30px;
 }
 #page4 .txt4{
-    font-size: 56px;
-    font-weight: lighter;
+    font-size: 3.6em;
+    font-family: 'LatoLight';
 }
 #page4 .txt5{
-    font-size: 42px;
-    font-weight: lighter;
+    font-size: 2.7em;
+    font-family: 'LatoLight';
     margin-bottom: -15px;
 }
 #page4 .liner{
 	position: relative;
     top: -20px;
-	font-size: 35px;
+	font-size: 0.8em;
+	font-family: 'LatoLight';
 }
 #page4 .txt6{
-    font-family: 'Abril Fatface';
-    font-size: 54px;
+    font-family: 'Abril Fatface','OtamaepRegular';
+    font-size: 3.5em;
 }
 /*-----------PROYECTS---------------*/
 #proyects{
@@ -236,7 +308,7 @@ html,body{
 }
 #proyects .proyectos{
 	text-align:center;
-	font-family:'Lato';
+	font-family:'LatoRegular';
 	color:#7394B7;
 	padding-bottom: 40px;
 }
@@ -267,53 +339,21 @@ html,body{
 	margin-right: 15px;
 }
 #proyects .images1 .img-text-left-2 .comillas{
-	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -70px;
-	margin-top: -6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 #proyects .images1 .img-text-left-2 .txt1{
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
 #proyects .images1 .img-text-left-2 .txt2{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifItalic';
     font-size: 13px;
-    font-style: italic;
 	margin-bottom: 15px;
+	line-height: 17px;
 }
-#proyects .images1 .img-text-left{
-    border-bottom: 1px solid #7394B7;
-    border-top: 1px solid #7394B7;
-    color: #7394B7;
-    height: 214px;
-    position: absolute;
-    text-align: left;
-    top: 454px;
-    width: 254px;
-}
-#proyects .images1 .img-text-left .comillas{
-	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -70px;
-	margin-top: -6px;
-}
-#proyects .images1 .img-text-left .txt1{
-    font-family: 'Abril Fatface';
-    font-size: 30px;
-	margin-top: -10px;
-}
-#proyects .images1 .img-text-left .txt2{
-    font-family: 'Droid Serif';
-    font-size: 13px;
-    font-style: italic;
-	margin-bottom: 10px;
-}
-#proyects .images1 .img-text-left .txt3{
-    font-family: 'Droid Serif';
-    font-size: 11px;
-}
+
 #proyects .images1 .img-text-right{
 	border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
@@ -325,20 +365,17 @@ html,body{
     width: 256px;
 }
 #proyects .images1 .img-text-right .comillas{
-	font-family: 'Abril Fatface';
-    font-size: 100px;
-    margin-bottom: -60px;
-    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 #proyects .images1 .img-text-right .txt1{
-    font-family: 'Droid Serif';
-    font-style: italic;
+    font-family: 'DroidSerifItalic';
     font-weight: bold;
 	margin-bottom: 12px;
 	font-size: 14px;
 }
 #proyects .images1 .img-text-right .txt2{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 
@@ -363,20 +400,16 @@ html,body{
 	margin-bottom: 14px;
 }
 #proyects .images2 .img-text-right .comillas{
-	font-family: 'Abril Fatface';
-    font-size: 100px;
-    margin-bottom: -60px;
-    margin-top: -24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 #proyects .images2 .img-text-right .txt1{
-    font-family: 'Droid Serif';
-    font-style: italic;
-    font-weight: bold;
+    font-family: 'DroidSerifBoldItalic';
 	margin-bottom: 12px;
 	font-size: 14px;
 }
 #proyects .images2 .img-text-right .txt2{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 
@@ -397,24 +430,21 @@ html,body{
     width: 240px;
 }
 #proyects .images3 .img-text-left .comillas{
-    font-family: 'Abril Fatface';
-    font-size: 100px;
-    margin-bottom: -75px;
-    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 #proyects .images3 .img-text-left .txt1{
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
 #proyects .images3 .img-text-left .txt2{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifItalic';
     font-size: 12px;
-    font-style: italic;
 	margin-bottom: 10px;
 }
 #proyects .images3 .img-text-left .txt3{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 #proyects .images3 .img-text-right{
@@ -427,24 +457,21 @@ html,body{
     width: 259px;
 }
 #proyects .images3 .img-text-right .comillas{
-	font-family: 'Abril Fatface';
-	font-size: 100px;
-	margin-bottom: -70px;
-	margin-top: -6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 #proyects .images3 .img-text-right .txt1{
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
 #proyects .images3 .img-text-right .txt2{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifItalic';
     font-size: 12px;
-    font-style: italic;
 	margin-bottom: 10px;
 }
 #proyects .images3 .img-text-right .txt3{
-    font-family: 'Droid Serif';
+    font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 #proyects .images3 .img1{float: right; width: 540px; margin-bottom: 15px;}
@@ -455,20 +482,20 @@ html,body{
 #proyects .images3 .img6{float: left; margin-bottom: 90px; width: 800px;}
 
 .clear{clear:both; padding-bottom: 7px; padding-top: 7px;}
+
 /*-----------FOOTER---------------*/
 #footer{
 	background-color:#7394B7;
 }
 #footer .txt-center{
     color: #FFFFFF;
-    font-family: 'Lato';
+    font-family: 'LatoLight';
     padding-bottom: 3%;
     padding-top: 3%;
 	text-align: center;
 }
 #footer .txt1{
     font-size: 42px;
-    font-weight: lighter;
     margin-bottom: 20px;
 }
 #footer .liner{
