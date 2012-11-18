@@ -194,14 +194,12 @@ html,body{
 	overflow:hidden;
 }
 #page3 .transparent-white{
-	background-color: #FFFFFF;
+	background:url("../img/contentBg-4.png") repeat scroll 0 0 transparent;
     height: 277px;
     margin-top: -138.5px;
-    opacity: 0.4;
     position: absolute;
     top: 50%;
-    width: 100%;
-	filter:alpha(opacity=40); /* For IE8 */
+    width: 100%;	
 }
 #page3 .txt-center{
     color: #000000;
@@ -222,7 +220,7 @@ html,body{
 	border-bottom: 1px solid;
     border-top: 1px solid;
 	font-family: 'Abril Fatface','OtamaepRegular';
-	font-size: 2.5em;
+	font-size: 3em;
 	padding-bottom: 8px;
 }
 #page3 .txt3{
@@ -286,19 +284,19 @@ html,body{
     font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 3.5em;
 }
-/*-----------PROYECTS---------------*/
-#proyects{
+/*-----------PROJECTS---------------*/
+#projects{
 	background-image:url(../img/pattern.jpg);
 	overflow:hidden;	
 }
-#proyects .logo2{
+#projects .logo2{
 	position:relative;
 	left:50%;
 	margin-left:-93px;
 	margin-bottom: 15px;
     margin-top: 40px;
 }
-#proyects .liner{
+#projects .liner{
 	color: #7394B7;
     font-size: 30px;
     font-weight: bold;
@@ -306,7 +304,7 @@ html,body{
     text-align: center;
     top: -20px;
 }
-#proyects .proyectos{
+#projects .projects-txt{
 	text-align:center;
 	font-family:'LatoRegular';
 	color:#7394B7;
@@ -314,47 +312,100 @@ html,body{
 }
 
 /*------------------------PROYECTOS DIV 1-------------------------*/
-#proyects .images1{
+#projects .images1{
     left: 50%;
     margin-left: -400px;
     position: relative;
     width: 800px;
 }
 
-#proyects .images1 .img1{float: right; width: 530px; margin-bottom: 14px;}
-#proyects .images1 .img3{float: left;  width: 255px; margin-right: 15px; margin-bottom: 14px;}
-#proyects .images1 .img4{float: right; width: 260px; margin-bottom: 15px;}
-#proyects .images1 .img5{float: right; width: 260px;}
-#proyects .images1 .img6{left: 0; position: absolute; top: 407px; width: 255px;}
+#projects .img-container{
+	overflow: hidden;
+}
+#projects .img-container img{
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
 
-#proyects .images1 .img-text-left-2{
+#projects .img-container img:hover{
+	-webkit-transform:scale(1.2,1.2);
+	-moz-transform:scale(1.2,1.2);
+	-o-transform:scale(1.2,1.2);
+	-ms-transform:scale(1.2,1.2);
+	transform:scale(1.2,1.2);
+}
+#projects .images1 .img-container.img01 {
+	width: 530px;
+	height: 300px;
+	float: right; 
+ 	margin-bottom: 14px;
+ }
+#projects .images1 .img1{width: 530px;}
+
+#projects .images1 .img-container.img03 {
+	float: left;  
+	width: 255px;
+	height: 340px;
+	margin-right: 15px;
+	margin-bottom: 14px;
+ }
+#projects .images1 .img3{width: 255px;}
+
+#projects .images1 .img-container.img04 {
+	float: right; 
+	width: 260px; 
+	height: 190px;
+	margin-bottom: 15px;
+ }
+#projects .images1 .img4{width: 260px;}
+
+#projects .images1 .img-container.img05 {
+	float: right; 
+	width: 260px;
+	height: 308px; 
+ }
+#projects .images1 .img5{width: 260px;}
+
+#projects .images1 .img-container.img06 {
+	height: 436px;
+	left: 0; 
+	position: absolute; 
+	top: 392px; 
+	width: 255px;
+ }
+#projects .images1 .img6{width: 255px;}
+
+#projects .images1 .img-text-left-2{
     border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
-    height: 390px;
+    height: 375px;
     float:left;
     text-align: left;
     top: 454px;
     width: 254px;
 	margin-right: 15px;
 }
-#proyects .images1 .img-text-left-2 .comillas{
+#projects .images1 .img-text-left-2 .comillas{
     margin-bottom: 15px;
     margin-top: 15px;
 }
-#proyects .images1 .img-text-left-2 .txt1{
+#projects .images1 .img-text-left-2 .txt1{
     font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
-#proyects .images1 .img-text-left-2 .txt2{
+#projects .images1 .img-text-left-2 .txt2{
     font-family: 'DroidSerifItalic';
     font-size: 13px;
 	margin-bottom: 15px;
 	line-height: 17px;
 }
 
-#proyects .images1 .img-text-right{
+#projects .images1 .img-text-right{
 	border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
@@ -364,32 +415,43 @@ html,body{
     text-align: right;
     width: 256px;
 }
-#proyects .images1 .img-text-right .comillas{
+#projects .images1 .img-text-right .comillas{
     margin-bottom: 15px;
     margin-top: 15px;
 }
-#proyects .images1 .img-text-right .txt1{
+#projects .images1 .img-text-right .txt1{
     font-family: 'DroidSerifItalic';
     font-weight: bold;
 	margin-bottom: 12px;
 	font-size: 14px;
 }
-#proyects .images1 .img-text-right .txt2{
+#projects .images1 .img-text-right .txt2{
     font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 
 /*------------------------PROYECTOS DIV 2-------------------------*/
-#proyects .images2{
+#projects .images2{
     left: 50%;
     margin-left: -400px;
     position: relative;
     width: 800px;
 }
-#proyects .images2 .img1{float: left; width: 525px;}
-#proyects .images2 .img2{float: right; width: 256px;}
+#projects .images2 .img-container.img01{
+	height: 350px;
+	width: 525px; 
+	float: left;
+}
+#projects .images2 .img1{width: 525px;}
 
-#proyects .images2 .img-text-right{
+#projects .images2 .img-container.img02{
+	float: right;
+	height: 212px; 
+	width: 256px;
+}
+#projects .images2 .img2{width: 256px;}
+
+#projects .images2 .img-text-right{
 	border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
@@ -399,28 +461,28 @@ html,body{
     width: 256px;
 	margin-bottom: 14px;
 }
-#proyects .images2 .img-text-right .comillas{
+#projects .images2 .img-text-right .comillas{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#proyects .images2 .img-text-right .txt1{
+#projects .images2 .img-text-right .txt1{
     font-family: 'DroidSerifBoldItalic';
 	margin-bottom: 12px;
 	font-size: 14px;
 }
-#proyects .images2 .img-text-right .txt2{
+#projects .images2 .img-text-right .txt2{
     font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
 
 /*------------------------PROYECTOS DIV 3-------------------------*/
-#proyects .images3{
+#projects .images3{
     left: 50%;
     margin-left: -400px;
     position: relative;
     width: 800px;
 }
-#proyects .images3 .img-text-left{
+#projects .images3 .img-text-left{
     border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
@@ -429,25 +491,25 @@ html,body{
     text-align: left;
     width: 240px;
 }
-#proyects .images3 .img-text-left .comillas{
+#projects .images3 .img-text-left .comillas{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#proyects .images3 .img-text-left .txt1{
+#projects .images3 .img-text-left .txt1{
     font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
-#proyects .images3 .img-text-left .txt2{
+#projects .images3 .img-text-left .txt2{
     font-family: 'DroidSerifItalic';
     font-size: 12px;
 	margin-bottom: 10px;
 }
-#proyects .images3 .img-text-left .txt3{
+#projects .images3 .img-text-left .txt3{
     font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
-#proyects .images3 .img-text-right{
+#projects .images3 .img-text-right{
     border-bottom: 1px solid #7394B7;
     border-top: 1px solid #7394B7;
     color: #7394B7;
@@ -456,30 +518,73 @@ html,body{
     text-align: left;
     width: 259px;
 }
-#proyects .images3 .img-text-right .comillas{
+#projects .images3 .img-text-right .comillas{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-#proyects .images3 .img-text-right .txt1{
+#projects .images3 .img-text-right .txt1{
     font-family: 'Abril Fatface','OtamaepRegular';
     font-size: 30px;
 	margin-top: -10px;
 }
-#proyects .images3 .img-text-right .txt2{
+#projects .images3 .img-text-right .txt2{
     font-family: 'DroidSerifItalic';
     font-size: 12px;
 	margin-bottom: 10px;
 }
-#proyects .images3 .img-text-right .txt3{
+#projects .images3 .img-text-right .txt3{
     font-family: 'DroidSerifRegular';
     font-size: 11px;
 }
-#proyects .images3 .img1{float: right; width: 540px; margin-bottom: 15px;}
-#proyects .images3 .img2{float: left; margin-bottom: 14px; width: 245px; margin-top: 15px; margin-right: 15px;}
-#proyects .images3 .img3{float: left; width: 264px; margin-bottom: 14px;}
-#proyects .images3 .img4{float: right; width: 260px; margin-bottom: 15px;}
-#proyects .images3 .img5{float: left; width: 522px;margin-bottom: 15px;}
-#proyects .images3 .img6{float: left; margin-bottom: 90px; width: 800px;}
+#projects .images3 .img-container.img01{
+	float: right;
+	height: 318px;
+	width: 540px;
+	margin-bottom: 15px;
+}
+#projects .images3 .img1{width: 540px;}
+
+#projects .images3 .img-container.img02{
+	float: left;
+	height: 364px; 
+	margin-bottom: 14px; 
+	width: 245px; 
+	margin-top: 15px; 
+	margin-right: 15px;
+}
+#projects .images3 .img2{width: 245px;}
+
+#projects .images3 .img-container.img03{
+	float: left;
+	height: 220px; 
+	width: 264px; 
+	margin-bottom: 14px;
+}
+#projects .images3 .img3{width: 264px;}
+
+#projects .images3 .img-container.img04{
+	float: right;
+	height: 309px; 
+	width: 260px; 
+	margin-bottom: 15px;
+}
+#projects .images3 .img4{width: 260px;}
+
+#projects .images3 .img-container.img05{
+	float: left;
+	height: 310px; 
+	width: 522px;
+	margin-bottom: 15px;
+}
+#projects .images3 .img5{width: 522px;}
+
+#projects .images3 .img-container.img06{
+	float: left; 
+	margin-bottom: 90px; 
+	width: 800px;
+	height: 228px;
+}
+#projects .images3 .img6{width: 800px;}
 
 .clear{clear:both; padding-bottom: 7px; padding-top: 7px;}
 
@@ -514,10 +619,15 @@ html,body{
     margin-top: 5px;
 }
 
+/*---------------END PAGE------------------*/
+#end-page{
+	background-image:url(../img/pattern.jpg);	    
+	padding-bottom: 200px;
+}
 /*---------------DISPLAYS NONES------------------*/
 /*#page1{display:none;}
 #page2{display:none;}
 #page3{display:none;}
 #page4{display:none;}
-#proyects{display:none;}
+#projects{display:none;}
 #footer{display:none;}*/

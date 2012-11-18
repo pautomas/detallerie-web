@@ -9,6 +9,7 @@
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/reset.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="css/jflow.style.css" type="text/css" rel="stylesheet"/>
 <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
 </head>
 
@@ -45,7 +46,7 @@
     	<div class="transparent-white"></div>
         	<div class="txt-center">
                 <p class="txt1">DISFRUTAMOS MIMANDO CADA DETALLE,</p>
-                <p class="txt2">ideando eventos, eventos que cautivan</p>
+                <p class="txt2">ideando eventos que cautivan</p>
                 <p class="txt3">A QUIENES CELEBRAN UN LOGRO, UN COMIENZO, UN FIN, UN NUEVO RETO...</p>
                 <p class="txt4">o un día como hoy</p>
             </div>    
@@ -62,10 +63,10 @@
         </div>
     </div>
     
-    <div id="proyects">
+    <div id="projects">
     	<img class="logo2" src="img/logo2.png">
         <p class="liner">_____________</p>
-        <p class="proyectos">PROYECTOS</p>
+        <p class="projects-txt">PROYECTOS</p>
         
         <div class="images1">
         	<div class="img-text-left-2">
@@ -78,11 +79,21 @@
                 <p class="txt2">Para que cualquier bolsillopueda tener un trozito de Detallerieen su evento, 
                 nos adaptamos a cualquiertipo de <br>presupuesto.</p>
             </div>
-            <img class="img1" src="img/pro1-2.jpg"> 
-			<img class="img3" src="img/pro1-3.jpg">
-			<img class="img4" src="img/pro1-4.jpg">
-			<img class="img5" src="img/pro1-5.jpg">
-            <img class="img6" src="img/pro1-1.jpg">
+			<div class="img-container img01">
+	            <a href="#"><img class="img1" src="img/pro1-2.jpg"></a>
+            </div>
+            <div class="img-container img03">
+				<a href="#"><img class="img3" src="img/pro1-3.jpg"></a>
+            </div>
+            <div class="img-container img04">
+				<a href="#"><img class="img4" src="img/pro1-4.jpg"></a>
+            </div>
+            <div class="img-container img05">
+				<a href="#"><img class="img5" src="img/pro1-5.jpg"></a>
+            </div>
+            <div class="img-container img06">
+            	<a href="#"><img class="img6" src="img/pro1-1.jpg"></a>
+            </div>
 			<div class="img-text-right">
             	<img class="comillas" src="img/comillas.png">
                 <p class="txt1">El gran estilo nace cuando lo<br>bello obtiene la victoria<br>sobre lo enorme.</p>
@@ -93,13 +104,17 @@
         <div class="clear"></div>
         
         <div class="images2">
-        	<img class="img1" src="img/pro1-6.jpg">
+        	<div class="img-container img01">
+        		<a href="#"><img class="img1" src="img/pro1-6.jpg"></a>
+            </div>
             <div class="img-text-right">
                 <img class="comillas" src="img/comillas.png">
                 <p class="txt1">La vida se juega en los<br>pequeños detalles.</p>
                 <p class="txt2">-Albert Einstein</p>
             </div>
-            <img class="img2" src="img/pro1-9.jpg">
+            <div class="img-container img02">
+            	<a href="#"><img class="img2" src="img/pro1-9.jpg"></a>
+            </div>
          </div>
          
         <div class="clear"></div>
@@ -112,11 +127,21 @@
                     <p class="txt2">no está en hacer siempre lo que se quiere<br>si no en querer siempre lo que se hace.</p>
                     <p class="txt3">-León Tolstói</p>
                 </div>
-                <img class="img1" src="img/pro1-7.jpg">	
-                <img class="img2" src="img/pro1-8.jpg">
-                <img class="img3" src="img/pro1-9.jpg">
-                <img class="img4" src="img/pro1-5.jpg">
-                <img class="img5" src="img/pro1-2.jpg">	
+                <div class="img-container img01">
+                	<a href="#"><img class="img1" src="img/pro1-7.jpg"></a>
+                </div>
+                <div class="img-container img02">	
+                	<a href="#"><img class="img2" src="img/pro1-8.jpg"></a>
+                </div>
+                <div class="img-container img03">
+                	<a href="#"><img class="img3" src="img/pro1-9.jpg"></a>
+                </div>
+                <div class="img-container img04">
+                	<a href="#"><img class="img4" src="img/pro1-5.jpg"></a>
+                </div>
+                <div class="img-container img05">
+                	<a href="#"><img class="img5" src="img/pro1-2.jpg"></a>	
+                </div>
                 <div class="img-text-right">
                     <img class="comillas" src="img/comillas.png">
                     <p class="txt1">La belleza</p>
@@ -124,7 +149,9 @@
                     <p class="txt2">no consiste en representar una cosa bella,<br>si no en la bella representación de una cosa.</p>
                     <p class="txt3">-Immanuel Kant</p>
                 </div>
-                <img class="img6" src="img/pro1-10.jpg">
+                <div class="img-container img06">
+                	<a href="#"><img class="img6" src="img/pro1-10.jpg"></a>	
+                </div>
             </div>
     </div>
    
@@ -137,7 +164,51 @@
             <a href="http://www.detallerie.com/blog/" target="_blank"><img src="img/blog.png" title="Blog"></a>
         </div>
     </div>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>    
+    <div id="end-page"></div>
+    
+    <!--SLIDER-->
+        <div id="sliderContainer">
+            <div id="mySlides">
+              <div id="slide1" class="slide"> <img src="img/prueba-slider1.jpg" alt="Slide 1 jFlow Plus" />
+                <div class="slideContent">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>Vivamus id mauris eget nibh facilisis commodo sed vitae dui. Donec in pretium ligula. Nam mattis tellus a enim scelerisque blandit.</p>
+                </div>
+              </div>
+              <div id="slide2" class="slide"> <img src="img/prueba-slider2.jpg" alt="Slide 2 jFlow Plus" />
+                <div class="slideContent">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>Vivamus id mauris eget nibh facilisis commodo sed vitae dui. Donec in pretium ligula. Nam mattis tellus a enim scelerisque blandit.</p>
+                </div>
+              </div>
+              <div id="slide3" class="slide"> <img src="img/prueba-slider3.jpg" alt="Slide 3 jFlow Plus" />
+                <div class="slideContent">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>Vivamus id mauris eget nibh facilisis commodo sed vitae dui. Donec in pretium ligula. Nam mattis tellus a enim scelerisque blandit.</p>
+                </div>
+              </div>
+              <div id="slide4" class="slide"> <img src="img/prueba-slider4.jpg" alt="Slide 3 jFlow Plus" />
+                <div class="slideContent">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>Vivamus id mauris eget nibh facilisis commodo sed vitae dui. Donec in pretium ligula. Nam mattis tellus a enim scelerisque blandit.</p>
+                </div>
+              </div>
+            </div>
+            <div id="myController"> 
+                <span class="jFlowControl"></span> 
+                <span class="jFlowControl"></span> 
+                <span class="jFlowControl"></span> 
+                <span class="jFlowControl"></span> 
+            </div>
+            <div class="jFlowPrev"></div>
+            <div class="jFlowNext"></div>
+            <div class="jFlowClose"></div>
+      </div>
+    <!--END_SLIDER-->
+    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="js/jflow.plus.js" type="text/javascript"></script> 
+       
     <script type="text/javascript">
             $(document).ready(function() {
             
@@ -153,6 +224,43 @@
                     }
                 });
             });
-     </script>    
+     </script> 
+     
+    
+	<script type="text/javascript">
+    
+        $(document).ready(function(){
+    
+            $("#myController").jFlow({
+    
+                controller: ".jFlowControl", // must be class, use . sign
+    
+                slideWrapper : "#jFlowSlider", // must be id, use # sign
+    
+                slides: "#mySlides",  // the div where all your sliding divs are nested in
+    
+                selectedWrapper: "jFlowSelected",  // just pure text, no sign
+                
+                effect: "flow", //this is the slide effect (rewind or flow)
+    
+                width: "800px",  // this is the width for the content-slider
+    
+                height: "550px",  // this is the height for the content-slider
+    
+                duration: 400,  // time in milliseconds to transition one slide
+                
+                pause: 5000, //time between transitions
+    
+                prev: ".jFlowPrev", // must be class, use . sign
+    
+                next: ".jFlowNext", // must be class, use . sign
+    
+                auto: true	
+    
+        });
+    
+    });
+    
+    </script>   
 </body>
 </html>
