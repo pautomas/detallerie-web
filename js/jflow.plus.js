@@ -17,7 +17,6 @@
         var jFS = opts.slideWrapper;
         var jSel = opts.selectedWrapper;
         var cur = 0;
-        var timer;
         var maxi = $(jFC).length;
         //get width of individual slides
         var width = $(opts.slides).children().outerWidth();
@@ -59,7 +58,7 @@
                  
                     //if we are NOT on the last slide
                     if (i != 0) {
-                        $("#mySlides").animate({
+                        $(opts.slides).animate({
                             left: -(i * width)
                         }, function () {
                             //if we are on the last slide then move the first slide into position
@@ -148,7 +147,7 @@
 					
 				});
 				//animate the slide container into position
-				$('#mySlides').animate({
+				$(opts.slides).animate({
 					left: '0px'
 				});
 				
@@ -163,7 +162,7 @@
 			//controller slide function for the remaining slides
             $(this).click(function () {
 				
-				//start up the timer
+				//start up the $.fn.jFlow.timer
                 dotimer();
 				
 				//if this slide is not animated
@@ -278,7 +277,7 @@
                         });
                         //add padding to display the last slide
                         //NEED TO MAKE DYMANIC
-                        $('#mySlides').animate({
+                        $(opts.slides).animate({
                             paddingLeft: width+"px"
                         });
                         //animate the last slide
@@ -293,7 +292,7 @@
                             });
                             //move the slide container position to the last slide
                             //NEED TO MAKE DYMANIC
-                            $('#mySlides').css({
+                            $(opts.slides).css({
                                 padding: "0px",
                                 left: "-"+(totalWidth - width)+"px"
                             });
@@ -315,7 +314,7 @@
 							$(opts.slides).find(":first-child").css('left','0px');
 						}
 
-                        $('#mySlides').animate({
+                        $(opts.slides).animate({
                             left: -(width * (cur - 1))
                         }, {
                             queue: false
@@ -380,9 +379,9 @@
 		//the jFlow Timer
         var dotimer = function (x) {
                 if ((opts.auto) == true) {
-                    if (timer != null) clearInterval(timer);
-                    timer = setInterval(function () {
-                        $(opts.next).click();
+                    if ($.fn.jFlow.timer != null) clearInterval($.fn.jFlow.timer);
+                    $.fn.jFlow.timer = setInterval(function () {
+                        donext();
                     }, pause);
                 }
             }
@@ -391,10 +390,14 @@
         $(opts.slides).hover(
 
         function () {
-            clearInterval(timer);
+            clearInterval($.fn.jFlow.timer);
         }, function () {
             dotimer();
         });
+    };
+    $.fn.jFlow.timer = null;
+    $.fn.jFlow.clear = function() {
+        clearInterval($.fn.jFlow.timer);
     };
     //end jFlow Plus Functions
     //default jFlow Plus Options
